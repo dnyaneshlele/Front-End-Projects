@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+
+}
+
+.container
+{
+    position: relative;
+
+}
+
+.clock
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 70%;
+  background-color: rgba(255, 255, 255, 0.1);  
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: #ffff;
+
+
+}
+
+ span
+{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i))); 
+    inset: 12px;
+    text-align: center;
+}
+
+span b
+{
+    position: absolute;
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+
+ ::before
+{
+   
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:#fff ;
+}
+
+.hand1 i
+{
+  position: absolute;
+  background-color: #fff;
+  width: 4px;
+  height: 70px;
+  border-radius: 8px;
+
+}
+
+.hand2 i
+{
+  position: absolute;
+  background-color:red;
+  width: 4px;
+  height: 70px;
+  border-radius: 8px;
+
+}
+
+.hand3 i
+{
+  position: absolute;
+  background-color: lightskyblue;
+  width: 4px;
+  height: 70px;
+  border-radius: 8px;
+
+}
+
+.hand1
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.hand2
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.hand3
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
